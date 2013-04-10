@@ -1,0 +1,396 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+html body{
+	width:100%;
+	height:100%;
+	padding:0px;
+}
+.zoomer {
+	float:right;
+  background-color:#888;
+  border-color:#202020;
+  -webkit-border-radius:50%;
+          border-radius:50%;
+  }
+  
+body {
+	font-size:11px;
+	font-family:sans-serif;
+	line-height:18px;
+	color:#fff;
+	background-color:black;
+}
+
+#title
+{
+	position:fixed;
+	z-index:1000;
+	background-color:rgba(0,0,0,0.6);
+	width:100%;
+	height:100%;
+}
+
+#title p 
+{
+		text-align:center;	
+		margin-top:30%;
+		font-family:'bodoniSTD';
+		font-size:150px; 
+		text-transform:uppercase;
+}
+#about
+{
+		position: relative;
+		background-color:black;
+			width:100%;
+			height:100%;
+}
+
+
+
+
+#about #VLNCDescription 
+{
+	position:relative;	
+	margin-left: auto;
+	margin-right:auto;
+	top: 40%;
+	width: 800px;
+	height: 488px;
+	text-align:center;
+
+	font-size:18px;
+	line-height:1.4em;font-family:"Gotham";
+}
+
+#about #firstline 
+{
+	text-align:center;
+
+	font-size:30px;
+	margin-bottom:20px;
+	line-height:1.4em;font-family:"bodoniSTD";
+}
+.videoProjet
+{
+	position:absolute;
+	margin-left: 50%;
+	left:-400px;
+	top:50%;
+	margin-top:-215px;
+	width:800px;
+	z-index:1000;	
+}
+header{
+	
+	}
+nav{
+	z-index:999;
+}
+nav#menu-top{
+	position:fixed;
+	margin-top:20px;
+	margin-left:20px;
+	
+
+	
+	width:540px;
+	height:88px;
+	
+	overflow:hidden;
+}
+
+
+nav#menu-top a{
+	line-height:88px;
+	display:block;
+	text-decoration:none;
+	float:left;
+	background-color:#000;
+	color:#FFF;
+	text-align:center;
+	
+	
+	
+	height:88px;
+	width:90px;
+
+}
+
+nav#menu-top #logo{
+	padding-left:0px;
+	padding-right:0px;
+
+}
+nav img {
+	position:relative;
+}
+
+
+
+nav#menu-top a:hover{
+color:#acacac;
+}
+#
+{
+	/* Set rules to fill background */
+	overflow:hidden;
+}
+#homepage {
+	overflow:hidden;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+#homepage blablablou{
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+	
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+	
+	/* Set up positioning */
+	z-index:0;
+	top: 0;
+	left: -15%;
+	overflow:hidden;
+}
+
+#bg { top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+.verticalImg {
+		margin-left:50%;  }
+
+
+@media screen and (max-width: 1024px) {
+	 /* Specific to this particular image */
+	#homepage blablablou {
+		left: 50%;
+		margin-left:50%;   /* 50% */
+	overflow:hidden;
+	}
+}
+.section{
+		background-color:#000000;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	
+	margin: 0px;
+	clear: both;
+	overflow:hidden;
+}
+
+ ul#listContact li{
+	display:block;
+	float:left;
+	height:20px;
+	margin-left:20px;
+}
+  ul#listContact li a{
+	display:block;
+	float:left;
+	font-size:27px;
+	text-decoration:none;
+	color:white;
+	font-family:'bodoniSTD';
+}
+ ul#listContact p{
+	display:inline;
+}
+.first  {
+	 margin-left: 0 !important;
+}
+
+ul#listContact li a
+{
+	display:block;
+	float:left;
+	font-size:34px;
+	text-decoration:none;
+	color:white;
+	
+		font-family:'bodoniSTD';
+}
+#townlist
+{
+	font-family:'bodoniSTD';
+		
+	font-size:14px;
+	text-decoration:none;
+	color:grey;
+	margin-top:60px;
+	margin-bottom:30px;
+	width:450px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#townlist b
+{
+	color:white;
+}
+#emailContact
+{
+		font-family:'bodoniSTD';
+		
+	font-size:17px;
+	text-decoration:none;
+	color:white;
+	margin-top:30px;
+	margin-bottom:30px;
+	width:100px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#emailContact a
+{
+		font-family:'bodoniSTD';
+		
+	font-size:17px;
+	text-decoration:none;
+	color:white;
+}
+ul#listContact
+{
+	border-top:1px solid #333;
+	padding-top:30px;
+	display:inline-block;	
+	margin-left:50px;
+	
+	
+}
+#contactBlack{
+	padding-top:20px;
+	position: absolute;
+	z-index:999	;
+	width: 630px;
+	height: 250px;
+	background-color:black;
+	top:50%;
+	left:50%;
+	margin-left:-315px;
+	margin-top:-120px;
+}
+
+#VLNCmap{
+	position: relative;
+	width: 100%;
+	height: 100%;	
+	clear: both;
+}
+
+#team{
+	position: relative;
+	width: 100%;
+	height: auto;
+	max-width: 1920px;
+	background-color:black;
+	min-width: 800px;
+	margin: 0px;
+}
+
+
+
+
+.section #labelPicture{
+	position:absolute;
+	bottom:20px;
+	left:20px;
+	
+	font-size:14px;
+	color:black;
+	text-transform:uppercase;
+	line-height:40px;
+	
+	height:40px;
+	background:#FFFFFF;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+
+.smallLink{
+	text-transform:uppercase;
+	text-decoration:none;
+	color:#555555;
+	margin-left:10px;
+	display:inline-block;
+}
+
+#dlLink{
+	font-size:12px;
+	margin-left:25px;
+	color:#777;
+	background-image:url('../img/ui/dl.jpg') ;
+	background-repeat:no-repeat;
+	background-position:10;
+	padding-left:25px;
+	padding-right:25px;
+}
+#dlLink:hover{
+	font-size:12px;
+	margin-left:25px;
+	color:#000000;
+	background-image:url('../img/ui/dl.jpg') ;
+	background-repeat:no-repeat;
+	background-position:10;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+
+ul #teamMembers
+{
+	display:block;
+	width:100%;
+	
+}
+
+.member
+{
+	overflow:hidden;
+	
+	float:left;text-align:center;
+	width:33%;
+
+}
+
+	
+.member img
+{
+		width:100%;
+		float:left;  
+        position:relative; 
+		
+}
+
+.member .nomMembre
+{		
+		
+		visibility:hidden;
+		position:relative;
+		display:inline-block; 
+		font-family:'bodoniSTD';
+		font-size:16px; 
+		text-transform:uppercase;
+		height:20px;
+		bottom:50px;
+		padding-left:10px;
+		padding-right:10px;
+		background-repeat:no-repeat;
+		background-image:url('../img/ui/puce.png'),url('../img/ui/puce.png');
+		background-position:left,right;
+}
+.member:hover .nomMembre{
+		visibility:visible;
+	
+	}
+

@@ -1,0 +1,22 @@
+// JavaScript Document
+
+
+$(document).ready(function(){
+	 
+	getMembersLink();
+	beginTimer();
+	setRolls();
+	setHoverHandler();
+	
+  
+ });
+
+//------------DOM select---------------------
+ function getMembersLink() {
+    $('#members a[class^=memberLink]').each(function() {
+	console.log(this);
+	});
+	
+	
+	
+}

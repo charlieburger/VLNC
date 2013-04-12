@@ -1,0 +1,17 @@
+SetEnv PHP_VER 5_TEST
+SetEnv REGISTER_GLOBALS 0
+
+AddType video/ogg  .ogv
+AddType video/mp4  .mp4
+AddType video/webm .webm
+
+AddType application/x-font-ttf        .ttf
+AddType application/octet-stream      .ttf
+AddType font/truetype                 .ttf
+AddType font/ttf                      .ttf
+AddType application/font-wof          .woff
+AddType application/x-font-woff       .woff
+AddType application/x-woff            .woff
+AddType application/vnd.ms-fontobject .eot
+AddType application/x-font-ttf        .ttf
+AddType application/x-font-woff       .woff

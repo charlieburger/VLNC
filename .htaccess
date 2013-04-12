@@ -15,3 +15,10 @@ AddType application/x-woff            .woff
 AddType application/vnd.ms-fontobject .eot
 AddType application/x-font-ttf        .ttf
 AddType application/x-font-woff       .woff
+
+
+# 480 weeks
+<FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|ttf|woff|eot|ogv|webm)$">
+  Header set Cache-Control "max-age=290304000, public"
+</FilesMatch>
+

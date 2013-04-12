@@ -333,7 +333,7 @@
 			  properties: {
 				  'marker-color': '#999',
 				  'marker-symbol': 'circle',
-				  title: 'Example Marker',
+				  title: 'Example Marker'
 			  }
 		  });
 		   markerLayer.add_feature({
@@ -342,7 +342,7 @@
 			  },
 			  properties: {
 				  'marker-color': '#999',
-				  'marker-symbol': 'circle',
+				  'marker-symbol': 'circle'
 			  }
 		  });
 		   markerLayer.add_feature({
@@ -351,7 +351,7 @@
 			  },
 			  properties: {
 				  'marker-color': '#999',
-				  'marker-symbol': 'circle',
+				  'marker-symbol': 'circle'
 			  }
 		  });
 		   markerLayer.add_feature({
@@ -360,7 +360,7 @@
 			  },
 			  properties: {
 				  'marker-color': '#999',
-				  'marker-symbol': 'circle',
+				  'marker-symbol': 'circle'
 			  }
 		  });
 		   markerLayer.add_feature({
@@ -369,7 +369,7 @@
 			  },
 			  properties: {
 				  'marker-color': '#999',
-				  'marker-symbol': 'circle',
+				  'marker-symbol': 'circle'
 			  }
 		  });
 		   markerLayer.add_feature({
@@ -378,7 +378,7 @@
 			  },
 			  properties: {
 				  'marker-color': '#999',
-				  'marker-symbol': 'circle',
+				  'marker-symbol': 'circle'
 			  }
 		  });
 		  markerLayer.add_feature({
@@ -387,7 +387,7 @@
 			  },
 			  properties: {
 				  'marker-color': '#999',
-				  'marker-symbol': 'circle',
+				  'marker-symbol': 'circle'
 			  }
 		  });
 		  markerLayer.add_feature({
@@ -396,7 +396,7 @@
 			  },
 			  properties: {
 				  'marker-color': '#999',
-				  'marker-symbol': 'circle',
+				  'marker-symbol': 'circle'
 			  }
 		  });
 		  /*

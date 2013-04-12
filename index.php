@@ -1,11 +1,10 @@
 <?php
-	class bg 
+	class bg
 	{
-	var $idx= null;
-	var $author= "";
-	var $type= "";
-	var $url="";
-	
+    var $idx= null;
+    var $author= "";
+    var $type= "";
+    var $url="";
 	}
 
 	/* 
@@ -22,7 +21,7 @@
 	$bg2->author = "Romain Montagut";
 	$bg2->type = "jpg";
 	$bg2->url = "02.jpg";*/
-	$bg3=new bg(); 
+	$bg3 = new bg();
 	
 	$bg3->idx = 2;
 	$bg3->author = "WE ARE A HAPPY (and violent) FAMILY";
@@ -34,9 +33,7 @@
   $i = rand(0, count($bgs)-1); // generate random number size of the array
   $selectedBg = "public/img/wp/".$bgs[$i]->url; // set variable equal to which random filename was chosen
   $selectedBgAuthor = $bgs[$i]->author; // set variable equal to which random filename was chosen
- 
-?>
-
+?><!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"><head>
 	<meta name="viewport" content="user-scalable=no,width=device-width" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />

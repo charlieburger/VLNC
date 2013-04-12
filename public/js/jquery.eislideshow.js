@@ -124,7 +124,7 @@
 			
 			// preload images
 			// add loading status
-			this.$loading		= $('<div class="ei-slider-loading"><img id="gifload" src="images/loading.gif"/></div>').prependTo( _self.$el );
+			this.$loading		= $('<div class="ei-slider-loading"><img id="gifload" src="/public/img/loading.gif"/></div>').prependTo( _self.$el );
 			
 		
 			$.when( this._preloadImages() ).done( function() {

@@ -192,13 +192,13 @@
                     	
                       </ul><!-- ei-slider-large -->
                     
-                    
+
                     <ul class="ei-slider-thumbs">
                       <li class="ei-slider-element">Current</li>
-                         <li><a href="#">Matthias Dandois x VLNC</a><img src="images/thumbs/1.jpg" alt="thumb01" /></li>
-                        <li><a href="#">R16</a><img src="images/thumbs/1.jpg" alt="thumb01" /></li>
-                        <li><a href="#">Kid Bombardos</a><img src="images/thumbs/1.jpg" alt="thumb01" /></li>
-                        <li><a href="#">Barbara Bui</a><img src="images/thumbs/1.jpg" alt="thumb01" /></li>
+                      <li><a href="#">Matthias Dandois x VLNC</a></li>
+                      <li><a href="#">R16</a></li>
+                      <li><a href="#">Kid Bombardos</a></li>
+                      <li><a href="#">Barbara Bui</a></li>
                     </ul><!-- ei-slider-thumbs -->
                
                 <div class="thisProjectNav">

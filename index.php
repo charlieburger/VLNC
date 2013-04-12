@@ -101,7 +101,7 @@
 <body>
 <header>
     <nav id="menu-top">
-       <a href="#homePage" id="logo" class="itemMenu"><img src="public/img/ui/logo.gif" alt="violence Collective Logo" /></a>
+       <a href="#homepage" id="logo" class="itemMenu"><img src="public/img/ui/logo.gif" alt="violence Collective Logo" /></a>
        <a href="#about" class="itemMenu scrollRoll"><img src="public/img/ui/iWork.gif" alt="" /></a>
        <a href="#projects" class="itemMenu scrollRoll"><img src="public/img/ui/iWwork.gif" alt="" /></a>
        <a href="#team" class="itemMenu scrollRoll"><img src="public/img/ui/iTeam.gif" alt="" /></a>

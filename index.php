@@ -34,73 +34,67 @@
   $selectedBg = "public/img/wp/".$bgs[$i]->url; // set variable equal to which random filename was chosen
   $selectedBgAuthor = $bgs[$i]->author; // set variable equal to which random filename was chosen
 ?><!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"><head>
+<html lang="fr">
+<head>
 	<meta name="viewport" content="user-scalable=no,width=device-width" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
     
 	<title>VLNC COLLECTIVE : IDEA MAKERS</title>
-    <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.5/mapbox.css' rel='stylesheet' />
+  <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.5/mapbox.css' rel='stylesheet' />
     
-    <link rel="stylesheet" type="text/css" href="public/css/styleJSslider.css" />
-    <link rel="stylesheet" media="all" href="public/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/styleJSslider.css" />
+  <link rel="stylesheet" media="all" href="public/css/style.css" />
 	<link rel="stylesheet" media="(max-width: 640px)" href="public/css/style640.css" />
-    <link href='public/js/wax/theme/controls.css' rel='stylesheet' type='text/css' />
-	 <link rel="stylesheet" type="text/css" href="public/js/shadowbox/shadowbox.css">
+  <link href='public/js/wax/theme/controls.css' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="public/js/shadowbox/shadowbox.css">
    
-    <script src='public/js/wax/ext/modestmaps.min.js' type='text/javascript'></script>
-    <script src='public/js/wax/dist/wax.mm.js' type='text/javascript'></script>
+  <script src='public/js/wax/ext/modestmaps.min.js' type='text/javascript'></script>
+  <script src='public/js/wax/dist/wax.mm.js' type='text/javascript'></script>
   
-    <!-- general-->
-    <script src="public/js/jquery.min.js"></script>	
-    <script type='text/javascript' src='public/js/queryLoader.js'></script>
-    <script src="public/js/jquery.timer.js"></script>
+  <!-- general-->
+  <script src="public/js/jquery.min.js"></script>
+  <script type='text/javascript' src='public/js/queryLoader.js'></script>
+  <script src="public/js/jquery.timer.js"></script>
 
-<script type="text/javascript">
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23909896-1']);
+    _gaq.push(['_trackPageview']);
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-23909896-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
     
-    <!-- plug in-->	
-    <script type="text/javascript" src="public/js/shadowbox/shadowbox.js"></script>
-    <script type="text/javascript">Shadowbox.init({
-    handleOversize:     "drag",
-    handleUnsupported:  "remove",
-    autoplayMovies:     false,
-	viewportPadding: 0,
-	animSequence:"wh"
-	});
-	
-    </script>
-    <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.5/mapbox.js'></script>
- 
-  
-    
-    <!-- perso-->
-     <script src="public/js/ui/resizeBG.js"></script>
-    <script src="public/js/ui/dropDownMenu.js"></script>
-    <!--<script src="public/js/ui/teamMember.js"></script>-->
-    <script src="public/js/ui/slideHandler.js"></script>
-    <script src="public/js/ui/teamGrid.js"></script>
+  <!-- plug in-->
+  <script type="text/javascript" src="public/js/shadowbox/shadowbox.js"></script>
+  <script type="text/javascript">
+    Shadowbox.init({
+      handleOversize:     "drag",
+      handleUnsupported:  "remove",
+      autoplayMovies:     false,
+      viewportPadding: 0,
+      animSequence:"wh"
+	  });
+  </script>
+  <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.5/mapbox.js'></script>
+
+  <!-- perso-->
+  <script src="public/js/ui/resizeBG.js"></script>
+  <script src="public/js/ui/dropDownMenu.js"></script>
+  <!--<script src="public/js/ui/teamMember.js"></script>-->
+  <script src="public/js/ui/slideHandler.js"></script>
+  <script src="public/js/ui/teamGrid.js"></script>
    
-       <style type="text/css">
+  <style type="text/css">
 		#homepage {
 			background-image:url('<?php echo $selectedBg ?>');
 		}
-		</style> 	
-
+	</style>
 </head>
 <body>
-
-
 <header>
     <nav id="menu-top">
        <a href="#homePage" id="logo" class="itemMenu"><img src="public/img/ui/logo.gif" alt="violence Collective Logo" /></a>
@@ -111,23 +105,22 @@
     </nav>
 </header>
 
-	 <!--------------title---------------> 
+	  <!--------------title--------------->
     <div id='title' id="tempTitle">
     	<p id='titleTex'>HOME</p>
-   </div>	
-   <!--------------HOMEPAGE---------------> 
+    </div>
+    <!--------------HOMEPAGE--------------->
     <div id='homePage' class="section">
-       	
-        <div id="labelPicture"><?php echo $selectedBgAuthor?></div>
-   </div>	
+      <div id="labelPicture"><?php echo $selectedBgAuthor; ?></div>
+    </div>
    
     <!--------------about---------------> 
     <div id='about' class="section">
     	<div id="VLNCDescription">
-         	<p id="firstline">Film makers, photographers, digital creatives, illustrators</p>
-        	<p id='aboutText'>We are a small collection of creative minds raised by the experience of life and shaped by our passions. Each one of these minds has its own skillset and personnality, but we all strive for quality and an enjoyable working process.</p>
-        </div>
-   </div>	
+        <p id="firstline">Film makers, photographers, digital creatives, illustrators</p>
+        <p id='aboutText'>We are a small collection of creative minds raised by the experience of life and shaped by our passions. Each one of these minds has its own skillset and personnality, but we all strive for quality and an enjoyable working process.</p>
+      </div>
+    </div>
    
     <!--------------projects---------------> 
     <div class="section diapo" id="projects">
@@ -219,7 +212,7 @@
      
     	<ul id="teamMembers">
         <li class="member">
-        	<a class="memberLink" href="team/antoine.html" rel="shadowbox[members]"><img src="public/img/team/antoine.jpg" alt="Pofil Antoine schrer" /></a>
+        	<a class="memberLink" href="team/antoine.html" rel="shadowbox[members]"><img src="public/img/team/antoine.jpg" alt="Pofil Antoine Schirer" /></a>
             <h3 class="nomMembre">Antoine Schirer</h3>
         </li>
         <li class="member">
@@ -293,21 +286,19 @@
           <!--------------contact---------------> 
             <div id='contact' class="section">
              <div id='contactBlack'>
-             		<div id="emailContact"><a href='mailto:peace@vlnc.fr' > peace@vlnc.fr</a></div>
+             		<div id="emailContact"><a href='mailto:peace@vlnc.fr'>peace@vlnc.fr</a></div>
                 <ul id="listContact">
                 	<li class="first"><a href='https://www.facebook.com/WEAREVLNC' target="_blank"><img src="public/img/ui/fIco.jpg" id="fico"/><p class="textLink">Facebook</p></a></li>
                		<li><a href='https://twitter.com/vlnc_co' target="_blank"><img src="public/img/ui/tico.jpg" id="tico"/><p  class="textLink">Twitter</p></a></li>
                 	<li><a href='https://vimeo.com/user7085047 '  target="_blank"><img src="public/img/ui/vico.jpg" id="vico"/> <p  class="textLink">Vimeo</p></a></li>
                 </ul>
                   <div id="townlist">
-                  					<p><b>We live in </b> Paris, Stockholm, Bordeaux, Berlin, New York</p>
-                  					<p><b>We are from</b> Brazil,Danemark,England, France, Sweden,  USA</p>
-                   </div>
-           		 </div>
+                    <p><b>We live in </b> Paris, Stockholm, Bordeaux, Berlin, New York</p>
+                    <p><b>We are from</b> Brazil,Danemark,England, France, Sweden,  USA</p>
+                  </div>
+             </div>
                
-                <div id='VLNCmap'>
-                
-           		 </div>
+             <div id='VLNCmap'></div>
            </div>	
            
          <script>
@@ -426,31 +417,21 @@
 		  var map = mapbox.load('vlnccollective.map-38yudet4');
 		  	 map.ui.zoomer.remove();*/
 		  
-        </script>
+</script>
 <script type="text/javascript" src="public/js/jquery.eislideshow.js"></script>
-        <script type="text/javascript" src="public/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="public/js/jquery.easing.1.3.js"></script>
         
-        <script type="text/javascript">	
-		
-		
-		  
-            $(function() {
-                $('#projects').eislideshow({
-					easing		: 'easeOutExpo',
-					titleeasing	: 'easeOutExpo',
-					// easing for the sliding animation
-					titlespeed	: 1200,
-					animation : 'center',
-					thumbMaxWidth       : 15
-                });
-				
-            });
-			
-			
-	
-			
-			
-        </script>
- 
+<script type="text/javascript">
+  $(function() {
+    $('#projects').eislideshow({
+      easing		: 'easeOutExpo',
+      titleeasing	: 'easeOutExpo',
+      // easing for the sliding animation
+      titlespeed	: 1200,
+      animation : 'center',
+      thumbMaxWidth       : 15
+    });
+  });
+</script>
 </body>
 </html>

@@ -55,8 +55,23 @@
   <script src="public/js/jquery.min.js"></script>
   <script type='text/javascript' src='public/js/queryLoader.js'></script>
   <script src="public/js/jquery.timer.js"></script>
+  <script type="text/javascript" src="public/js/shadowbox/shadowbox.js"></script>
 
   <script type="text/javascript">
+    // Fix the slides height
+    $(window).ready(function() {
+      $('body > .section').css('min-height', $(window).height() + 'px');
+
+      Shadowbox.init({
+        handleOversize:     "drag",
+        handleUnsupported:  "remove",
+        autoplayMovies:     false,
+        viewportPadding: 0,
+        animSequence:"wh"
+      });
+    });
+
+    // Google A
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-23909896-1']);
     _gaq.push(['_trackPageview']);
@@ -67,18 +82,7 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
-    
-  <!-- plug in-->
-  <script type="text/javascript" src="public/js/shadowbox/shadowbox.js"></script>
-  <script type="text/javascript">
-    Shadowbox.init({
-      handleOversize:     "drag",
-      handleUnsupported:  "remove",
-      autoplayMovies:     false,
-      viewportPadding: 0,
-      animSequence:"wh"
-	  });
-  </script>
+
   <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.5/mapbox.js'></script>
 
   <!-- perso-->
@@ -110,7 +114,7 @@
     	<p id='titleTex'>HOME</p>
     </div>
     <!--------------HOMEPAGE--------------->
-    <div id='homePage' class="section">
+    <div id="homepage" class="section">
       <div id="labelPicture"><?php echo $selectedBgAuthor; ?></div>
     </div>
    

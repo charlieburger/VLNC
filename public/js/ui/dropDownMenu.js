@@ -12,7 +12,6 @@ $(document).ready(function(){
     if (!mobile) {  
     console.log('notmobile');
 	getMenuItems();
-	beginTimer();
 	setRolls();
 	setHoverHandler();
 	}
@@ -80,7 +79,7 @@ function hideMenu() {
 		 var time=(1/(i+1)) * 300;
 		
 		currentI.animate({
-			opacity: 0,
+			opacity: 0
 		  }, time, function() {
 			// Animation complete.
 			

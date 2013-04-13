@@ -81,6 +81,17 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
+
+    // Hide the loading when all the page is loaded
+    $(window).load(function () {
+      $('#preload').animate({
+        opacity: 0
+      }, 1000, function() {
+        $('#preload').remove();
+      });
+      // this is for the menu
+      beginTimer();
+    });
   </script>
 
   <script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.5/mapbox.js'></script>

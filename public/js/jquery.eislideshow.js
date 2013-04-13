@@ -205,7 +205,7 @@
 				$img.css({
 					width		: imgDim.width,
 					height		: imgDim.height,
-					marginLeft	: imgDim.left,
+					marginLeft	: imgDim.left
 				});
 				
 			});
@@ -398,7 +398,7 @@
 				});
 				
 			
-			$(window).on('smartresize.eislideshow', function( event ) {
+			jQuery(this).bind('smartresize.eislideshow', function( event ) {
 				
 				// resize the images
 				_self._setImagesSize();
@@ -409,7 +409,7 @@
 			});
 			
 			// click the thumbs
-			this.$thumbs.on( 'click.eislideshow', function( event ) {
+			this.$thumbs.bind( 'click.eislideshow', function( event ) {
 				
 				if( _self.options.autoplay ) {
 				
@@ -428,7 +428,7 @@
 			});
 			
 			// click the images
-			this.$images.on( 'click.eislideshow', function( event ) {
+			this.$images.bind( 'click.eislideshow', function( event ) {
 				console.log('click image'+_self.curseur);
 				
 				_self.curseur ++ ;

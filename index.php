@@ -152,7 +152,7 @@
     </div>
    
     <!--------------projects---------------> 
-    <div class="section diapo" id="projects">
+    <div class="section diapo" id="projects" data-img="/public/img/menu_gifs/pony.gif" data-duration="5000">
        		
             	 
                 <div  class="ei-slider">
@@ -237,7 +237,7 @@
      
      
     <!--------------TEAM--------------->
-     <div id='team' class="section">
+     <div id='team' class="section" data-img="/public/img/menu_gifs/pony.gif" data-duration="3000">
      
     	<ul id="teamMembers">
         <li class="member">

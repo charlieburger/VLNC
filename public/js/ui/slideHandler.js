@@ -2,10 +2,13 @@ var scroll_pending = false;
 var title_timeout_id = null;
 
 $(document).ready(function () {
-    console.log("Dom ready");
-    active = true;
-    lastItem = 0;
     $('#title').hide();
+
+    // Preload all the section gifs
+    $('.section[data-img]').each(function() {
+        var i = new Image();
+        i.src = $(this).data('img');
+    });
 
     // Fine control of the scroll!
     $('body').mousewheel(function(event, delta) {
@@ -44,90 +47,6 @@ $(document).keydown(function (e) {
             break;
     }
 });
-/*
- $(window).scroll(function () {
-
- //console.log("scrollTop"+$(window).scrollTop());
- //console.log("hauteur section"+$('.section').height());
-
-
- if(active)
- {
- var h = $('.section').height();
- var sT = $(window).scrollTop();
- var ratio = sT/h;
-
- var percentage = ratio - Math.floor(ratio);
- currentItem = Math.ceil(ratio);
- if(lastItem ==0 && currentItem >1)
- {
- lastItem=currentItem;
- }
-
- console.log("currentItem =>"+currentItem);
- console.log("ratio =>"+ratio);
- console.log("percentage =>"+percentage);
- console.log("last =>"+lastItem);
-
-
-
- if(currentItem > lastItem && percentage<0.60 && percentage>0.02 && active)
- {
-
- console.log("go down");
- active=false;
-
- var sens=1;
-
-
- $('html, body').stop().animate(
- {
- scrollTop: ((currentItem)*(h))
- },
- {
- complete: function(){active=true; lastItem=currentItem; console.log("new currentItem"+lastItem);console.log("------------------------")}
- },
- 1500,
- 'easeInOutExpo'
- );
-
- //stop event
- //re event after animate
-
- if you don't want to use the easing effects:
- $('html, body').stop().animate({
- scrollTop: $($anchor.attr('href')).offset().top
- }, 1000);
-
- }
-
- else if( ratio < lastItem &&  active )
- {
- console.log("goBacward");
-
-
- var sens=1;
- active=false;
- currentItem--;
-
- $('html, body').stop().animate(
- {
- scrollTop: ((currentItem)*(h))
- },
- {
- complete: function(){active=true;lastItem=currentItem;console.log("new currentItem up"+currentItem);console.log("------------------------")}
- },
- 1500,
- 'easeInOutExpo'
- );
- }
-
- }
-
-
- });
- */
-
 
 $(function () {
     $('nav a').bind('click', function (event) {
@@ -140,10 +59,16 @@ function goToSection(section_id) {
     if (scroll_pending) return;
 
     var $title = section_id.replace('#', '');
+    var section = $(section_id);
 
     if ($title !== "homepage" && $title !== "nogo") {
-        $('#title p').text($title);
-        $('#title').fadeIn(200);
+        if (section.data('img')) {
+            $('#title p').html('<img src="'+section.data('img')+'" alt="" />')
+            $('#title').show();
+        } else {
+            $('#title p').text($title);
+            $('#title').fadeIn(200);
+        }
 
         if (title_timeout_id) {
             window.clearTimeout(title_timeout_id);
@@ -159,10 +84,11 @@ function goToSection(section_id) {
         function () {
             active = true;
             scroll_pending = false;
+            var duration = section.data('duration') ? parseInt(section.data('duration'), 10) - 1000 : 1000;
 
             title_timeout_id = window.setTimeout(function() {
                 $('#title').fadeOut('slow');
-            });
+            }, duration);
         }
     );
 }

@@ -107,7 +107,7 @@ function showMenu() {
 		 var time=(1/(i+1)) * 1000;
 		
 		currentI.animate({
-			opacity: 1,
+			opacity: 1
 		  }, 5, function() {
 			// Animation complete.
 			currentI.show();

@@ -56,6 +56,7 @@
   <script type='text/javascript' src='public/js/queryLoader.js'></script>
   <script src="public/js/jquery.timer.js"></script>
   <script type="text/javascript" src="public/js/shadowbox/shadowbox.js"></script>
+  <script type="text/javascript" src="public/js/jquery.mousewheel.js"></script>
 
   <script type="text/javascript">
     // Fix the slides height
@@ -71,7 +72,7 @@
       });
     });
 
-    // Google A
+    // Google Analytics
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-23909896-1']);
     _gaq.push(['_trackPageview']);
@@ -82,6 +83,8 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 
+    var section_offsets = {};
+
     // Hide the loading when all the page is loaded
     $(window).load(function () {
       $('#preload').animate({
@@ -91,6 +94,13 @@
       });
       // this is for the menu
       beginTimer();
+
+      // Calcul the section offset for navigation
+      $('body > .section').each(function() {
+          section_offsets[$(this).offset().top] = '#'+this.id;
+      });
+
+      console.log(section_offsets);
     });
   </script>
 
